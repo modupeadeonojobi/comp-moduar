@@ -1,26 +1,10 @@
 <div class="ui statistics">
-    <div class="statistic">
+    <div class="statistic" *ngFor="let item of stats">
         <div class="value">
-            22
+            {{ item.value }}
         </div>
         <div class="label">
-            Faves
-        </div>
-    </div>
-    <div class="statistic">
-        <div class="value">
-            31,200
-        </div>
-        <div class="label">
-            Views
-        </div>
-    </div>
-    <div class="statistic">
-        <div class="value">
-            22
-        </div>
-        <div class="label">
-            Members
+            {{ item.label }}
         </div>
     </div>
 </div>
