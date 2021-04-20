@@ -5,10 +5,11 @@ import { CommonModule } from '@angular/common';
 import { ViewsRoutingModule } from './views-routing.module';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { ViewHomeComponent } from './view-home/view-home.component';
+import { ItemsComponent } from './items/items.component';
 
 
 @NgModule({
-  declarations: [StatisticsComponent, ViewHomeComponent],
+  declarations: [StatisticsComponent, ViewHomeComponent, ItemsComponent],
   imports: [
     CommonModule,
     ViewsRoutingModule,
