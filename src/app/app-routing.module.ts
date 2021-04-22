@@ -2,6 +2,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { UnathorizedComponent } from './unathorized/unathorized.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
       import('./mods/mods.module').then(m => m.ModsModule)
   },
   {
+    path: 'unathorized',
+    component: UnathorizedComponent
+  }, {
     path: '',
     component: HomeComponent
   },
